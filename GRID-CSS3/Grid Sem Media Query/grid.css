@@ -1,0 +1,20 @@
+.auto-grid {
+    --auto-grid-gap: 1em;
+    --auto-grid-min-size: 350px;
+
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(var(--auto-grid-min-size), 1fr)
+    );
+    grid-gap: var(--auto-grid-gap, 1rem);
+}
+
+.item {
+    background: #2bb;
+    color: #fff;
+    padding: 1em;
+    font-family: 'Jetbrains Mono', monospace;
+    font-size: 1em;
+    border-radius: 10px;
+}
